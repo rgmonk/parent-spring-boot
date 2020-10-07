@@ -1,1 +1,6 @@
 target/*
+.theia
+.classpath
+.factorypath
+.project
+.settings/
