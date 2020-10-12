@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head><title>Home Page</title></head>
+<body>
+<h1>Hello !</h1>
+<p>Welcome to <span th:text="${appName}">Our App</span></p>
+
+<table>
+    <tr>
+        <td><a th:href="@{/addBook}" th:text="#{msg.AddBook}"/></td>
+    </tr>
+    <tr>
+        <td><a th:href="@{/listBooks}" th:text="#{msg.ListBooks}"/></td>
+    </tr>
+</table>
+
+</body>
+</html>

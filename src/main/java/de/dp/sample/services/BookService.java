@@ -4,9 +4,9 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import de.dp.sample.models.Book;
+import de.dp.sample.model.Book;
 
-import de.dp.sample.repositories.BookRepository;
+import de.dp.sample.repository.BookRepository;
 
 @Service
 public class BookService {

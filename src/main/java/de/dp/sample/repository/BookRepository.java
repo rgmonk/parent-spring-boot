@@ -1,9 +1,9 @@
-package de.dp.sample.repositories;
+package de.dp.sample.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import de.dp.sample.models.Book;
+import de.dp.sample.model.Book;
 
 import java.util.List;
 

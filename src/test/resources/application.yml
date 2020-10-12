@@ -1,15 +1,8 @@
 server:
   port: 8090
-spring.h2.console.enabled: true
 
 spring:
-  datasource:
-    hikari:
-      connection-timeout: 5000
-      maximum-pool-size: 5
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: postgres
+  h2.console.enabled: true
 
   thymeleaf:
     cache: false

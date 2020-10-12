@@ -1,4 +1,4 @@
-package de.dp.sample.models;
+package de.dp.sample.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,15 +7,17 @@ import javax.persistence.Id;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
+@ToString
 @Entity
 public class Book {
  
     @Id
     @GeneratedValue
-    private Long id;
+    private long id;
 
     @Column(nullable = false, unique = true)
     private String title;

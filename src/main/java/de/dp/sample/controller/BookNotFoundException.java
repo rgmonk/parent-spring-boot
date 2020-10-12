@@ -1,2 +1,4 @@
-package de.dp.sample.controller;public class BookNotFoundException {
+package de.dp.sample.controller;
+
+public class BookNotFoundException extends RuntimeException {
 }
