@@ -16,7 +16,7 @@
     <properties>
 
         <!-- Generic properties -->
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -61,20 +61,31 @@
 
     <build>
         <plugins>
-
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
             </plugin>
-
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-archetype-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <defaultEncoding>UTF-8</defaultEncoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.cyclonedx</groupId>
+                <artifactId>cyclonedx-maven-plugin</artifactId>
+                <version>2.1.0</version>
+                <configuration>
+                    <outputFormat>xml</outputFormat>
+                </configuration>
+            </plugin>
         </plugins>
-
     </build>
-
 </project>

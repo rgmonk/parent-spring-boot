@@ -6,3 +6,4 @@ target/*
 .settings/
 .idea/
 parent-spring-boot.iml
+/src/docker/data/
