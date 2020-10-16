@@ -11,9 +11,12 @@ import de.dp.sample.repository.BookRepository;
 @Service
 public class BookService {
  
-    @Autowired
-    private BookRepository bookRepository;
- 
+    private final BookRepository bookRepository;
+
+    public BookService(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
+    }
+
     public List<Book> list() {
         return bookRepository.findAll();
     }
